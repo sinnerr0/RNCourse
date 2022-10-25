@@ -5,3 +5,8 @@
   <img src="docs/section2.png" width="700px" alt="section2" />
 
 # Section3
+
+- StyleSheet에 대해서 익숙해 지는 시간이었음
+- RN 컴포넌트/API 뿐 아니라 Expo SDK/API에도 RN 개발하는데 필요한 내용들이 많이 있어 보임
+- Text 컴포넌트간은 부모/자식 관계를 가질 수 있고 스타일이 상속될 수 있다.
+- expo-app-loading이 deprecated되고 expo-splash-screen으로 바꾸는 것을 해보았다.
