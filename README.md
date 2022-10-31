@@ -4,9 +4,15 @@
 - 컴포넌트가 stlye 상속이 없고 android, ios마다 적용되거나 적용되지 않는 style이 및 props가 있어 둘다 에뮬레이터를 띄워놓고 실행해야 할 듯
   <img src="docs/section2.png" width="700px" alt="section2" />
 
-# Section3
+# Section4
 
 - StyleSheet에 대해서 익숙해 지는 시간이었음
 - RN 컴포넌트/API 뿐 아니라 Expo SDK/API에도 RN 개발하는데 필요한 내용들이 많이 있어 보임
 - Text 컴포넌트간은 부모/자식 관계를 가질 수 있고 스타일이 상속될 수 있다.
 - expo-app-loading이 deprecated되고 expo-splash-screen으로 바꾸는 것을 해보았다.
+
+# Section 5
+
+- Dimensions, useWindowDimensions를 이용하여 반응형으로 구현 가능
+- Platform을 이용하여 플랫폼 구분 가능
+- 파일 확장자(android, ios)를 이용하여 다른 플랫폼의 코드를 작성 가능
