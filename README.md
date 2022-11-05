@@ -15,4 +15,9 @@
 
 - Dimensions, useWindowDimensions를 이용하여 반응형으로 구현 가능
 - Platform을 이용하여 플랫폼 구분 가능
-- 파일 확장자(android, ios)를 이용하여 다른 플랫폼의 코드를 작성 가능
+- 파일 확장자(android, ios)를 이용하여 플랫폼 전용 코드를 작성 가능
+
+# Section 6
+
+- useLayoutEffect를 한 번도 사용하지 않았는데 어떨때 사용하는지 알 수 있었음
+- React Navigation 즐찾 추가
