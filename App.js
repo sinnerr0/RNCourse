@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { Button, StyleSheet, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import CategoriesScreen from "./screens/CategoriesScreen";
 import MealsOverviewScreen from "./screens/MealsOverviewScreen";
@@ -11,42 +11,42 @@ import UserScreen from "./screens/UserScreen";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Ionicons } from "@expo/vector-icons";
 
-const Drawer = createDrawerNavigator();
+const BottomTab = createBottomTabNavigator();
 
 export default function App() {
   return (
     <>
       <StatusBar style="light" />
       <NavigationContainer>
-        <Drawer.Navigator
+        <BottomTab.Navigator
           screenOptions={{
             headerStyle: { backgroundColor: "#3c0a6b" },
             headerTintColor: "white",
-            drawerActiveBackgroundColor: "#f0e1ff",
-            drawerActiveTintColor: "#3c0a6b",
+            // tabBarActiveBackgroundColor: "#f0e1ff",
+            tabBarActiveTintColor: "#3c0a6b",
             // drawerStyle: { backgroundColor: "#ccc" },
           }}
         >
-          <Drawer.Screen
+          <BottomTab.Screen
             name="Welcome"
             component={WelcomeScreen}
             options={{
-              drawerLabel: "Welcome Screen",
-              drawerIcon: ({ color, size }) => (
+              tabBarLabel: "Welcome Screen",
+              tabBarIcon: ({ color, size }) => (
                 <Ionicons name="home" color={color} size={size} />
               ),
             }}
           />
-          <Drawer.Screen
+          <BottomTab.Screen
             name="User"
             component={UserScreen}
             options={{
-              drawerIcon: ({ color, size }) => (
+              tabBarIcon: ({ color, size }) => (
                 <Ionicons name="person" color={color} size={size} />
               ),
             }}
           />
-        </Drawer.Navigator>
+        </BottomTab.Navigator>
       </NavigationContainer>
     </>
   );
