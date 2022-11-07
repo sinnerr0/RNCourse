@@ -1,3 +1,7 @@
+# RNCourse
+
+React Native 강의(https://www.udemy.com/course/react-native-2022-ko/)를 듣고 따라하면서 관련 기록을 남깁니다.
+
 # Section2
 
 - flexbox가 자주 사용하는 스타일이라 default layout style 인건 편한 듯
