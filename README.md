@@ -32,3 +32,4 @@ React Native 강의(https://www.udemy.com/course/react-native-2022-ko/)를 듣�
 # Section 7
 
 - React Context를 이용한 상태관리를 배움
+- React Redux를 이용한 상태관리를 배움
