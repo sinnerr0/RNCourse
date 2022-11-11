@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 function Subtitle({ children }) {
   return (
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   subtitleContainer: {
     padding: 6,
-    marginHorizontal: 24,
+    marginHorizontal: 12,
     marginVertical: 4,
     borderBottomColor: "#e2b497",
     borderBottomWidth: 2,

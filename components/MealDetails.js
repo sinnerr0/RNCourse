@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Platform } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 function MealDetails({
   duration,
@@ -9,11 +9,11 @@ function MealDetails({
 }) {
   return (
     <View style={[styles.details, style]}>
-      <Text style={[styles.detailItems, textStyle]}>{duration}m</Text>
-      <Text style={[styles.detailItems, textStyle]}>
+      <Text style={[styles.detailItem, textStyle]}>{duration}m</Text>
+      <Text style={[styles.detailItem, textStyle]}>
         {complexity.toUpperCase()}
       </Text>
-      <Text style={[styles.detailItems, textStyle]}>
+      <Text style={[styles.detailItem, textStyle]}>
         {affordability.toUpperCase()}
       </Text>
     </View>
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 8,
   },
-  detailItems: {
+  detailItem: {
     marginHorizontal: 4,
     fontSize: 12,
   },

@@ -28,3 +28,7 @@ React Native 강의(https://www.udemy.com/course/react-native-2022-ko/)를 듣�
 - Drawer 수행 시 아래 에러 발생하면 강의에 나온 해결방법 말고 링크된 깃헙 이슈 답변으로 해결하는게 정답 인 듯  
   `Reanimated 2 failed to create a worklet, maybe you forgot to add Reanimated's babel plugin?`
   https://github.com/software-mansion/react-native-reanimated/issues/1875#issuecomment-1125706058
+
+# Section 7
+
+- React Context를 이용한 상태관리를 배움
