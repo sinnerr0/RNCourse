@@ -2,13 +2,13 @@
 
 React Native 강의(https://www.udemy.com/course/react-native-2022-ko/)를 듣고 따라하면서 관련 기록을 남깁니다.
 
-# Section2
+# Section 2
 
 - flexbox가 자주 사용하는 스타일이라 default layout style 인건 편한 듯
 - 컴포넌트가 stlye 상속이 없고 android, ios마다 적용되거나 적용되지 않는 style이 및 props가 있어 둘다 에뮬레이터를 띄워놓고 실행해야 할 듯
   <img src="docs/section2.png" width="700px" alt="section2" />
 
-# Section4
+# Section 4
 
 - StyleSheet에 대해서 익숙해 지는 시간이었음
 - RN 컴포넌트/API 뿐 아니라 Expo SDK/API에도 RN 개발하는데 필요한 내용들이 많이 있어 보임
@@ -29,7 +29,7 @@ React Native 강의(https://www.udemy.com/course/react-native-2022-ko/)를 듣�
   `Reanimated 2 failed to create a worklet, maybe you forgot to add Reanimated's babel plugin?`
   https://github.com/software-mansion/react-native-reanimated/issues/1875#issuecomment-1125706058
 
-# Section 7
+# Section 9
 
-- React Context를 이용한 상태관리를 배움
-- React Redux를 이용한 상태관리를 배움
+- input 입력에 대한 처리를 배움
+- 날짜 출력하는데 Date.toISOString를 사용하고 있어 잘못 사용하고 있음. 영국사람인가? 아닌거 같은데...
