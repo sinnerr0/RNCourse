@@ -33,3 +33,8 @@ React Native 강의(https://www.udemy.com/course/react-native-2022-ko/)를 듣�
 
 - input 입력에 대한 처리를 배움
 - 날짜 출력하는데 Date.toISOString를 사용하고 있어 잘못 사용하고 있음. 영국사람인가? 아닌거 같은데...
+
+# Section 11
+
+- 여기서도 deprecated된 expo-app-loading 대신 expo-splash-screen 적용
+- token 저장에 @react-native-async-storage/async-storage를 사용하는데 암호화되지 않은 저장소이기 때문에 expo-secure-store를 사용하여 저장시키는 것으로 변경
