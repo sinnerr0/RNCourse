@@ -38,3 +38,7 @@ React Native 강의(https://www.udemy.com/course/react-native-2022-ko/)를 듣�
 
 - 여기서도 deprecated된 expo-app-loading 대신 expo-splash-screen 적용
 - token 저장에 @react-native-async-storage/async-storage를 사용하는데 암호화되지 않은 저장소이기 때문에 expo-secure-store를 사용하여 저장시키는 것으로 변경
+
+# Section 12
+
+- 여기서도 deprecated된 expo-app-loading 대신 expo-splash-screen 적용
