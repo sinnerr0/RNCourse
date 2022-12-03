@@ -47,6 +47,6 @@ React Native 강의(https://www.udemy.com/course/react-native-2022-ko/)를 듣�
 
 - 바로 안되는 경우나 에러가 발생되는 경우가 있어 android는 Android Studio에서 프로젝트를 한 번 열고 패키지 다운로드 및 초기 환경이 설정될 수 있도록 하고, ios는 xcworkspace를 실행시켜 Xcode를 열어 빌드 및 설정이 정상인지 확인한다음에 실행하는 것이 좋을 듯.
 
-# Section 14
+# Section 15
 
--
+- 알림 권한 설정하는 부분이 강의 내용에 없이 진행해 별도로 추가해야함.(강의 자료로만 설정해야 한다고 알려줌)
