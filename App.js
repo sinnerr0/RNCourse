@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Button, View, Alert, Platform } from "react-native";
 import * as Notifications from "expo-notifications";
@@ -14,6 +14,8 @@ Notifications.setNotificationHandler({
 });
 
 export default function App() {
+  const [pushTokenData, setPushTokenData] = useState("");
+
   useEffect(() => {
     async function configurePushNotifications() {
       const { status } = await Notifications.getPermissionsAsync();
@@ -26,14 +28,15 @@ export default function App() {
 
       if (finalStatus !== "granted") {
         Alert.alert(
-          "Permission required",
-          "Push notifications need the appropriate permissions."
+          "권한 필요",
+          "푸시 알림을 위해선 적절한 권한이 필요합니다."
         );
         return;
       }
 
       const pushTokenData = await Notifications.getExpoPushTokenAsync();
-      console.log(pushTokenData);
+      console.log(pushTokenData.data);
+      setPushTokenData(pushTokenData.data);
 
       if (Platform.OS === "android") {
         Notifications.setNotificationChannelAsync("default", {
@@ -74,7 +77,7 @@ export default function App() {
   function scheduleNotificationHandler() {
     Notifications.scheduleNotificationAsync({
       content: {
-        title: "나의 첫 번째 로컬 알림",
+        title: "나의 첫 번째 알림",
         body: "알림 설명 내용",
         data: { userName: "최경식" },
       },
@@ -84,11 +87,36 @@ export default function App() {
     });
   }
 
+  async function sendPushNotificationHandler() {
+    if (!pushTokenData) return;
+    try {
+      const response = await fetch("https://exp.host/--/api/v2/push/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          to: pushTokenData,
+          title: "테스트 - 푸시 알림!!",
+          body: "테스트 알림 입니다.",
+        }),
+      });
+      const json = await response.json();
+      console.log(json);
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
   return (
     <View style={styles.container}>
       <Button
         title="Schedule Notification"
         onPress={scheduleNotificationHandler}
+      />
+      <Button
+        title="Send Push Notification"
+        onPress={sendPushNotificationHandler}
       />
       <StatusBar style="auto" />
     </View>
